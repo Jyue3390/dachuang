@@ -14,8 +14,8 @@
 				/>
 			</div>
 			<div class="w-3/5 flex flex-col">
-				<Zhexian class="h-1/3 bg-opacity-90 bg-slate-800 box-border pb-4" :data="data.serverData" />
-        		<Zhexian class="h-1/3 bg-opacity-90 bg-slate-800 box-border pb-4"  />
+				<Zhexian class="h-2/5 bg-opacity-90 bg-slate-800 box-border pb-4" :data="data.serverData" />
+        		<Shenbao class="h-2/5 bg-opacity-90 bg-slate-800 box-border pb-4"  />
 			</div>
 		</div>
 	</div>
@@ -26,6 +26,7 @@ import MapChart from './components/MapChart.vue'
 import { ref } from 'vue'
 import { getVisualization } from '@/api/visualization.js'
 import Zhexian from './components/zhexian.vue'
+import Shenbao from './components/shenbao.vue'
 
 const data = ref(null)
 

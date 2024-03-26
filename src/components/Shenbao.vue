@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>【负荷数据预测】</div>
+    <div>【申请电量预测】</div>
     <div ref="target" class="w-full h-full"></div>
   </div>
 </template>
@@ -85,9 +85,9 @@ const renderChart = () => {
         },
         areaStyle: {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-            { offset: 0, color: 'rgba(250, 50, 90, 0.8)' },
-            { offset: 0, color: 'rgba(250, 50, 90, 0.4)' },
-            { offset: 1, color: 'rgba(250, 50, 90, 0)' }
+            { offset: 0, color: 'rgba(250, 250, 250, 0.8)' },
+            { offset: 0, color: 'rgba(250, 250, 250, 0.5)' },
+            { offset: 1, color: 'rgba(250, 250, 250, 0)' }
           ])
         },
         itemStyle: {
@@ -103,9 +103,9 @@ const renderChart = () => {
         },
         areaStyle: {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-            { offset: 0, color: 'rgba(0, 250, 250, 0.8)' },
-            { offset: 0, color: 'rgba(0, 250, 250, 0.5)' },
-            { offset: 1, color: 'rgba(0, 250, 250, 0)' }
+            { offset: 0, color: 'rgba(250, 250, 90, 0.8)' },
+            { offset: 0, color: 'rgba(250, 250, 90, 0.5)' },
+            { offset: 1, color: 'rgba(250, 250, 90, 0)' }
           ])
         },
         itemStyle: {
