@@ -7,8 +7,8 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import * as echarts from 'echarts'
-import mapJson from '@/assets/MapData/china.json'
-import elecData from '@/assets/data/elec2223.json'
+import mapJson from '../assets/MapData/china.json'
+import elecData from '../assets/data/elec2223.json'
 import axios from 'axios'
 
 const props = defineProps({

@@ -8,7 +8,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import * as echarts from 'echarts';
-import Data from '@/assets/data/zhexian_demo1.json';
+import Data from '../assets/data/zhexian_demo1.json';
 
 const target = ref(null);
 

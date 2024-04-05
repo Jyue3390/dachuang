@@ -24,9 +24,9 @@
 <script setup>
 import MapChart from './components/MapChart.vue'
 import { ref } from 'vue'
-import { getVisualization } from '@/api/visualization.js'
+import { getVisualization } from './api/visualization.js'
 import Zhexian from './components/zhexian.vue'
-import Shenbao from './components/shenbao.vue'
+import Shenbao from './components/Shenbao.vue'
 
 const data = ref(null)
 
