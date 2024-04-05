@@ -39,4 +39,29 @@ loadData()
 setInterval(() => {
 	loadData()
 }, 3000)
+
+
 </script>
+
+<script>
+export default {
+  data() {
+    return {
+      windowWidth: window.innerWidth // 初始窗口宽度
+    };
+  },
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.windowWidth = window.innerWidth; // 更新窗口宽度
+    }
+  }
+};
+</script>
+
+
